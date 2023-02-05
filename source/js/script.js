@@ -1,2 +1,2 @@
-document.querySelector('h1').innerHTML = 'Проверка JavaScript & SCSS';
+// document.querySelector('h1').innerHTML = 'Проверка JavaScript & SCSS';
 
