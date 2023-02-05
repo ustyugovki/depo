@@ -7,57 +7,59 @@
     <title>DePO - платформа для торговли цифровыми активами</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page__body">
     <header class="header">
-      <a href="#" class="header__logo">
-        <img
-          src="#"
-          alt="Логотип DePO."
-          class="header__image"
-          width="97"
-          height="24"
-        >
-      </a>
+      <div class="header__wrapper">
+        <a href="#" class="header__logo">
+          <img
+            src="#"
+            alt="Логотип DePO."
+            class="header__image"
+            width="97"
+            height="24"
+          >
+        </a>
 
-      <div class="header__menu menu">
-        <button class="menu__toggle">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
+        <div class="header__menu menu">
+          <button class="menu__toggle">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
 
-        <nav class="menu__navigation">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#" class="menu__link">О нас</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Как это работает</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Где работаем</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">FAQ</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Контакты</a>
-            </li>
-          </ul>
-
-          <div class="menu__languages">
-            <ul class="menu__languages-list">
-              <li class="menu__language-item">
-                <a href="#" class="menu__language-link">Русский</a>
+          <nav class="menu__navigation">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">О нас</a>
               </li>
-              <li class="menu__language-item">
-                <a href="#" class="menu__language-link">English</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Как это работает</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Где работаем</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">FAQ</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
               </li>
             </ul>
-          </div>
 
-          <button class="menu__launch button button--launch">
-            <span class="button__text button__text--launch">Launch app</span>
-          </button>
-        </nav>
+            <div class="menu__languages">
+              <ul class="menu__languages-list">
+                <li class="menu__language-item">
+                  <a href="#" class="menu__language-link">Русский</a>
+                </li>
+                <li class="menu__language-item">
+                  <a href="#" class="menu__language-link">English</a>
+                </li>
+              </ul>
+            </div>
+
+            <button class="menu__launch button button--launch">
+              <span class="button__text button__text--launch">Launch app</span>
+            </button>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -130,7 +132,7 @@
             <span class="welcome__scroll-text">Листайте вниз</span>
           </div>
 
-          <div class="welcome__wrapper social">
+          <div class="welcome__social-wrapper social">
             <span class="social__description">Наши социальные сети</span>
 
             <ul class="social__list">
@@ -203,10 +205,9 @@
       </section>
 
       <section class="about">
-        <!-- <h2 class="about__title"></h2> -->
         <h2 class="about__title visually-hidden">О платформе</h2>
 
-        <div class="about__title-wrapper">
+        <div class="about__subtitle-wrapper">
           <p class="about__subtitle">Ведущая платформа&nbsp; для торговли&nbsp; цифровыми активами</p>
         </div>
 
@@ -220,7 +221,7 @@
       <section class="step">
         <h2 class="step__title visually-hidden">Список шагов для обмена</h2>
 
-        <div class="step__title-wrapper">
+        <div class="step__subtitle-wrapper">
           <h2 class="step__subtitle">Совершите обмен за 3 шага</h2>
           <a class="step__exchange">Начать обмен</a>
         </div>
@@ -437,7 +438,7 @@
         <p class="footer__privacy-text">Privacy policy</p>
       </div>
 
-      <div class="footer__wrapper social">
+      <div class="footer__social-wrapper social">
         <span class="social__description">Наши социальные сети</span>
 
         <ul class="social__list">
@@ -506,7 +507,6 @@
           </li>
         </ul>
       </div>
-
     </footer>
 
     <script src="./js/script.js"></script>
