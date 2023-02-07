@@ -8,6 +8,13 @@ $color-default-black: #000000;
 $color-default-gray: #6f767e;
 $color-default-white: #ffffff;
 
+// Button
+
+$background-color-button: #3e8bf3;
+$background-color-button-hover: #3474ca;
+$background-color-button-active: #295da2;
+$background-color-button-disabled: #f5f9fe;
+
 
 // Project palette
 // для нейминга цветов используется https://www.htmlcsscolor.com/
@@ -22,5 +29,6 @@ $ff-inter: "Inter", "Arial", sans-serif;
 
 // Viewports
 
+$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1024px;

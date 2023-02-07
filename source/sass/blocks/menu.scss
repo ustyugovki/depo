@@ -1,0 +1,48 @@
+@use "../global/bootstrap.scss";
+
+
+.menu {
+  position: relative;
+}
+
+.menu__list,
+.menu__languages-list {
+  @include bootstrap.list-reset;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+
+// Цвет посещенной ссылки
+.menu__link:visited {
+  color: inherit;
+}
+
+.menu__toggle-title {
+  @include bootstrap.visually-hidden;
+}
+
+// подложка кнопки
+.menu__toggle {
+  position: relative;
+  left: 40px;
+  width: 21px;
+  height: 20px;
+  background-color: bootstrap.$color-default-white;
+  cursor: pointer;
+  border: none;
+}
+
+// burger menu
+.menu--closed .menu__toggle::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/control/menu-burger.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 14px;
+}
+
