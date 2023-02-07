@@ -14,7 +14,7 @@
   line-height: 20px;
 
   color: bootstrap.$color-default-white;
-  background-color: bootstrap.$background-color-button;
+  background-color: bootstrap.$color-blue;
   // border: 2px solid $color-gray;
   border: none;
   text-align: center;
@@ -33,17 +33,17 @@
   }
 
   &:hover {
-    background-color: bootstrap.$background-color-button-hover;
+    background-color: bootstrap.$color-blue-hover;
     // color: #ffffff;
   }
 
   &:active {
-    background-color: bootstrap.$background-color-button-active;
+    background-color: bootstrap.$color-blue-active;
     // color: rgba($color-white, 0.3);
   }
 
   &:disabled {
-    background-color: bootstrap.$background-color-button-disabled;
+    background-color: bootstrap.$color-blue-disabled;
     // background-color: rgba($color-white, 0.3);
     // color: rgba($color-white, 0.3);
   }
@@ -57,6 +57,7 @@
 
   /* Show focus styles on keyboard focus. */
   &:focus-visible {
+    background-color: bootstrap.$color-blue-hover;
     outline: 2px solid bootstrap.$color-default-gray;
     outline-offset: -2px;
     z-index: 50;

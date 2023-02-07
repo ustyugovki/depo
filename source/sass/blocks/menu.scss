@@ -12,12 +12,15 @@
 
 .menu__link {
   text-decoration: none;
+
+  // Цвет посещенной ссылки
+  &:visited {
+    color: inherit;
+  }
+
+  @include bootstrap.focus-state;
 }
 
-// Цвет посещенной ссылки
-.menu__link:visited {
-  color: inherit;
-}
 
 .menu__toggle-title {
   @include bootstrap.visually-hidden;
@@ -26,12 +29,13 @@
 // подложка кнопки
 .menu__toggle {
   position: relative;
-  left: 40px;
-  width: 21px;
-  height: 20px;
+  width: 20px;
+  height: 14px;
   background-color: bootstrap.$color-default-white;
   cursor: pointer;
   border: none;
+
+  @include bootstrap.focus-state;
 }
 
 // burger menu
