@@ -24,18 +24,22 @@
     <header class="header">
       <div class="header__wrapper">
         <a href="#" class="header__logo">
-          <img
-            src="#"
-            alt="Логотип DePO."
-            class="header__image"
-            width="97"
-            height="24"
-          >
+
+          <picture>
+            <!-- <source media="(min-width: 1024px)" srcset="./img/logo/depo-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo/depo-logo-tablet.svg"> -->
+            <img
+              src="./img/logo/depo-logo-mobile.svg"
+              alt="Логотип DePO."
+              class="header__image"
+              width="97"
+              height="24">
+          </picture>
         </a>
 
-        <div class="header__menu menu">
+        <div class="header__menu menu menu--closed">
           <button class="menu__toggle">
-            <span class="visually-hidden">Открыть/закрыть меню</span>
+            <span class="menu__toggle-title visually-hidden">Открыть/закрыть меню</span>
           </button>
 
           <nav class="menu__navigation">
@@ -68,7 +72,7 @@
               </ul>
             </div>
 
-            <button class="menu__launch button button--launch">
+            <button class="menu__launch button button--header">
               <span class="button__text button__text--launch">Launch app</span>
             </button>
           </nav>
@@ -78,14 +82,14 @@
 
     <main class="main-index-container">
       <section class="welcome">
-        <h1 class="welcome__title">Обменивай крипту и фиат без ограничений</h1>
+        <h1 class="welcome__title title title--h1">Обменивай крипту и фиат без ограничений</h1>
 
-        <button class="welcome__launch">Launch app</button>
+        <button class="welcome__launch button">Launch app</button>
 
         <p class="welcome__description">Работает на смарт-контрактах</p>
 
 
-        <article class="calculator">
+        <article class="welcome__calculator calculator">
           <h2 class="calculator__title visually-hidden">Форма получения/отправки</h2>
 
           <a href="" class="calculator__action calculator__action--send">Send</a>
@@ -221,7 +225,7 @@
         <h2 class="about__title visually-hidden">О платформе</h2>
 
         <div class="about__subtitle-wrapper">
-          <p class="about__subtitle">Ведущая платформа&nbsp; для торговли&nbsp; цифровыми активами</p>
+          <p class="about__subtitle title title--h2">Ведущая платформа&nbsp; для торговли&nbsp; цифровыми активами</p>
         </div>
 
         <div class="about__description-wrapper">
@@ -265,11 +269,11 @@
 
               <div class="card__content">
                 <div class="card__step-wrapper">
-                  <p class="card__step">Шаг 1</p>
+                  <p class="card__step title title--h4">Шаг 1</p>
                 </div>
 
                 <div class="card__content-wrapper">
-                  <h3 class="card__title">Создай или найди сделку</h3>
+                  <h3 class="card__title title title--h3">Создай или найди сделку</h3>
                   <p class="card__text">Широкий спектр услуг по торговле и управлению&nbsp; цифровыми активами для удовлетворения </p>
                 </div>
               </div>

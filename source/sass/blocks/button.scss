@@ -1,0 +1,64 @@
+@use "../global/bootstrap.scss";
+
+.button {
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: bootstrap.$color-default-white;
+  background-color: bootstrap.$background-color-button;
+  // border: 2px solid $color-gray;
+  border: none;
+  text-align: center;
+  // text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+
+  outline: none;
+  outline-offset: -2px;
+
+  border-radius: 8px;
+
+  &--header {
+    width: 121px;
+    min-height: 47px;
+  }
+
+  &:hover {
+    background-color: bootstrap.$background-color-button-hover;
+    // color: #ffffff;
+  }
+
+  &:active {
+    background-color: bootstrap.$background-color-button-active;
+    // color: rgba($color-white, 0.3);
+  }
+
+  &:disabled {
+    background-color: bootstrap.$background-color-button-disabled;
+    // background-color: rgba($color-white, 0.3);
+    // color: rgba($color-white, 0.3);
+  }
+
+  /* Hide focus styles if they're not needed, for example,
+  when an element receives focus via the mouse. */
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  /* Show focus styles on keyboard focus. */
+  &:focus-visible {
+    outline: 2px solid bootstrap.$color-default-gray;
+    outline-offset: -2px;
+    z-index: 50;
+  }
+}
