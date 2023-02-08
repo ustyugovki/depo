@@ -1,51 +1,99 @@
 @use "../global/bootstrap.scss";
 
-
-.languages__list {
+.languages {
   width: 116px;
   height: 24px;
+  display: block;
+}
+
+.languages__list {
+  @include bootstrap.list-reset;
+}
+
+.languages__link {
+  width: 116px;
+  height: 24px;
+  text-decoration: none;
+}
+
+.languages__text {
+  margin: 0;
   padding-left: 28px;
+  width: 116px;
+  height: 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: bootstrap.$color-default-black;
-  appearance: none;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  // transition: all 0.2s ease-out;
   position: relative;
 
-  @include bootstrap.focus-state;
-
-  option {
-    font: inherit;
+  &:visited {
+    color: bootstrap.$color-default-black;
   }
 }
 
-// заменяем стрелку у select
-// clip-path
-.languages__list:not([multiple]) {
-  padding-right: 1.2em;
-  background-repeat: no-repeat;
-  background-position: calc(100% - 0.25em) 0.35em;
-  background-size: 0.85em auto;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath d='M70.3 13.8L40 66.3 9.7 13.8z' fill='%23000'%3E%3C/path%3E%3C/svg%3E");
+/* активируем подменю */
+.languages:hover .languages__item-eng {
+  display: flex;
 }
 
-/* скроет иконку стрелки в IE */
-select::-ms-expand {
+.languages:focus-within .languages__item-eng {
+  display: flex;
+}
+
+/* подменю */
+.languages__item-eng {
   display: none;
+  flex-direction: row;
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
 }
 
-.languages::before {
+/* фокусы элементов */
+.languages__link:hover {
+  opacity: 0.6;
+}
+
+.languages__link:active {
+  opacity: 0.3;
+}
+
+.languages__item:focus-within {
+  position: relative;
+  z-index: 50;
+  outline: 2px solid bootstrap.$color-default-gray;
+  outline-offset: 0;
+}
+
+// реализация стрелки
+.languages__item:first-child .languages__text::after {
+  width: 10px;
+  height: 6px;
   position: absolute;
   content: "";
+  top: 10px;
+  right: 8px;
+  background-image: url("../../img/control/arrow-down.svg");
+  background-repeat: no-repeat;
+}
 
-  height: 20px;
+// реализация флагов
+.languages__link::before {
   width: 20px;
-  background: url("../../img/icons-languages/rus.svg") 100% 50% no-repeat;
+  height: 20px;
+  position: absolute;
+  content: "";
+}
+
+.languages__link-rus::before {
+  background-image: url("../../img/icons-languages/rus.svg");
+  background-repeat: no-repeat;
+}
+
+.languages__link-eng::before {
+  background-image: url("../../img/icons-languages/bel.svg");
+  background-repeat: no-repeat;
 }
 
