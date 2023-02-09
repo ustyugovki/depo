@@ -1,0 +1,87 @@
+@use "../global/bootstrap.scss";
+
+.welcome {
+  background-color: bootstrap.$color-blue-disabled;
+}
+
+.welcome__description {
+  margin: 0;
+}
+
+.welcome__circle-wrapper {
+
+  width: 634px;
+  height: 634px;
+  overflow: hidden;
+  position: relative;
+}
+
+.welcome__circle-container {
+  width: 634px;
+  height: 634px;
+  // border: 2px solid bootstrap.$color-blue-disabled;
+  // border-radius: 50%;
+
+  // animation: 15s rotate ease infinite;
+  // animation-name – имя анимации: rotation
+  animation-name: rotation;
+  // animation-duration — время в секундах, за которое происходит цикл вращения;
+  animation-duration: 10s;
+  // animation-iteration-count – количество повторений, бесконечно - infinite
+  animation-iteration-count: 1;
+  // animation-timing-function – тип анимации, линейный (равномерный) – linear
+  animation-timing-function: linear;
+
+  // z-index: -10;
+  overflow: hidden;
+
+  position: relative;
+  content: "";
+  // left: -100px;
+}
+
+@keyframes rotation {
+  // положение элемента на начальном этапе
+  0% {
+    transform: rotate(0deg);
+  }
+
+  // положение элементана конечном этапе
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.circle {
+  width: 554px;
+  height: 554px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: bootstrap.$color-blue-light;
+  position: relative;
+}
+
+.circle::before {
+  width: 315px;
+  height: 337px;
+  content: "";
+  left: -28px;
+  bottom: -30px;
+  position: absolute;
+  transform: rotate(1deg);
+  background-image: url("../../img/background/arrow-blue.svg");
+  background-repeat: no-repeat;
+}
+
+.circle::after {
+  width: 315px;
+  height: 337px;
+  content: "";
+  top: -30px;
+  right: -35px;
+  position: absolute;
+  transform: rotate(2deg);
+  background-image: url("../../img/background/arrow-green.svg");
+  background-repeat: no-repeat;
+}
