@@ -32,6 +32,11 @@
     min-height: 47px;
   }
 
+  &--welcome {
+    width: 159px;
+    min-height: 64px;
+  }
+
   &:hover {
     background-color: bootstrap.$color-blue-hover;
     // color: #ffffff;
