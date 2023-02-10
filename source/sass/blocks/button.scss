@@ -37,6 +37,12 @@
     min-height: 64px;
   }
 
+  &--converter {
+    width: 418px;
+    min-height: 40px;
+    border-radius: 6px;
+  }
+
   &:hover {
     background-color: bootstrap.$color-blue-hover;
     // color: #ffffff;

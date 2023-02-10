@@ -1,560 +1,445 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DePO - платформа для торговли цифровыми активами</title>
 
-    <!-- шрифты для калькулятора -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DePO - платформа для торговли цифровыми активами</title>
 
-    <!--
+  <!-- шрифты для калькулятора -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    crossorigin="anonymous">
+
+  <!--
     <link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/opensans.woff" type="font/woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/opensansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
      -->
 
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body class="page__body">
-    <header class="header">
-      <div class="header__wrapper">
-        <a href="#" class="header__logo">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-          <picture>
-            <!-- <source media="(min-width: 1024px)" srcset="./img/logo/depo-logo-desktop.svg">
+<body class="page__body">
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="#" class="header__logo">
+
+        <picture>
+          <!-- <source media="(min-width: 1024px)" srcset="./img/logo/depo-logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="./img/logo/depo-logo-tablet.svg"> -->
-            <img
-              src="./img/logo/depo-logo-mobile.svg"
-              alt="Логотип DePO."
-              class="header__image"
-              width="97"
-              height="24">
-          </picture>
-        </a>
+          <img src="./img/logo/depo-logo-mobile.svg" alt="Логотип DePO." class="header__image" width="97" height="24">
+        </picture>
+      </a>
 
-        <div class="header__menu menu menu--closed">
-          <button class="menu__toggle">
-            <span class="menu__toggle-title visually-hidden">Открыть/закрыть меню</span>
-          </button>
-
-          <nav class="menu__navigation">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#" class="menu__link">О нас</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Как это работает</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Где работаем</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">FAQ</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Контакты</a>
-              </li>
-            </ul>
-
-            <div class="menu__languages languages">
-              <ul class="languages__list">
-                <li class="languages__item languages__item-rus">
-                  <a class="languages__link languages__link-rus" href="#">
-                    <p class="languages__text">Русский</p>
-                  </a>
-                </li>
-                <li class="languages__item languages__item-eng">
-                  <a class="languages__link languages__link-eng" href="#">
-                    <p class="languages__text">English</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <button class="menu__launch button button--header">
-              <span class="button__text button__text--launch">Launch app</span>
-            </button>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main class="main-index-container">
-      <section class="welcome">
-        <h1 class="welcome__title title title--h1">Обменивай крипту и фиат без ограничений</h1>
-
-        <button class="welcome__launch button button--welcome">
-          <span>Launch app</span>
+      <div class="header__menu menu menu--closed">
+        <button class="menu__toggle">
+          <span class="menu__toggle-title visually-hidden">Открыть/закрыть меню</span>
         </button>
 
-        <div class="welcome__description-wrapper">
-          <img
-            src="./img/icons/welcome-notepad.svg"
-            alt="Логотип DePO."
-            class=""
-            width="24"
-            height="24">
+        <nav class="menu__navigation">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Как это работает</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Где работаем</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
 
-          <p class="welcome__description">Работает на смарт-контрактах</p>
-        </div>
-
-        <div class="welcome__circle-wrapper">
-
-          <div class="welcome__circle-container">
-            <div class="circle">
-            </div>
-          </div>
-
-
-
-
-        </div>
-
-
-
-
-        <article class="welcome__calculator calculator">
-          <h2 class="calculator__title visually-hidden">Форма получения/отправки</h2>
-
-          <a href="" class="calculator__action calculator__action--send">Send</a>
-          <a href="" class="calculator__action calculator__action--recieve">Recieve</a>
-
-          <p class="calculator__price">$350.00</p>
-          <p class="calculator__crypto">0 BTC ≈ $0.00</p>
-
-          <button class="calculator__conversion">>></button>
-
-          <form action="https://echo.htmlacademy.ru/" method="post" class="calculator__form form">
-            <fieldset class="form__section">
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__label">
-                    <span class="form__pay">Pay with</span>
-                    <select name="crypto" class="form__select">
-                      <option value="bitcoin">Bitcoin</option>
-                      <option value="etherium">Etherium</option>
-                    </select>
-                  </label>
-                </li>
-
-                <li class="form__item">
-                  <label class="form__label">
-                    <span class="form__send">Send to</span>
-                        <input
-                          class="form__input"
-                          type="text"
-                          name="address"
-                          placeholder="+995 590 558 124"
-                          required
-                        >
-                  </label>
-                </li>
-
-                <li class="form__item">
-                  <label class="form__label">
-                    <span class="form__note">Note</span>
-                        <input
-                          class="form__input"
-                          type="text"
-                          name="note"
-                          placeholder="Type to add a note"
-                        >
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <button class="form__button">Continue Transfer</button>
-          </form>
-        </article>
-
-        <div class="welcome__social">
-          <div class="welcome__scroll-down">
-            <span class="welcome__scroll-text">Листайте вниз</span>
-          </div>
-
-          <div class="welcome__social-wrapper social">
-            <span class="social__description">Наши социальные сети</span>
-
-            <ul class="social__list">
-              <li class="social__item">
-                <a
-                  class="social__link social__link--facebook"
-                  href="https://www.facebook.com"
-                >
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Facebook"
-                  >
-                    <use href="#"></use>
-                  </svg>
-                  <span class="visually-hidden">Facebook.</span>
+          <div class="menu__languages languages">
+            <ul class="languages__list">
+              <li class="languages__item languages__item-rus">
+                <a class="languages__link languages__link-rus" href="#">
+                  <p class="languages__text">Русский</p>
                 </a>
               </li>
-              <li class="social__item">
-                <a
-                  class="social__link social__link--twitter"
-                  href="https://twitter.com"
-                >
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Twitter"
-                  >
-                    <use href="#"></use>
-                  </svg>
-                  <span class="visually-hidden">Twitter.</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a
-                  class="social__link social__link--instagram"
-                  href="https://www.instagram.com"
-                >
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Instagram"
-                  >
-                    <use href="#"></use>
-                  </svg>
-                  <span class="visually-hidden">Instagram.</span>
+              <li class="languages__item languages__item-eng">
+                <a class="languages__link languages__link-eng" href="#">
+                  <p class="languages__text">English</p>
                 </a>
               </li>
             </ul>
           </div>
+
+          <button class="menu__launch button button--header">
+            <span class="button__text button__text--launch">Launch app</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-index-container">
+    <section class="welcome">
+      <h1 class="welcome__title title title--h1">Обменивай крипту и фиат без ограничений</h1>
+
+      <button class="welcome__launch button button--welcome">
+        <span>Launch app</span>
+      </button>
+
+      <div class="welcome__description-wrapper">
+        <img src="./img/icons/welcome-notepad.svg" alt="Логотип DePO." class="" width="24" height="24">
+
+        <p class="welcome__description">Работает на смарт-контрактах</p>
+      </div>
+
+      <div class="welcome__circle-wrapper">
+        <div class="welcome__circle-container">
+          <div class="circle">
+          </div>
         </div>
-      </section>
+      </div>
 
-      <section class="about">
-        <h2 class="about__title visually-hidden">О платформе</h2>
+      <article class="welcome__converter converter">
+        <h2 class="converter__title">Форма получения/отправки</h2>
 
-        <div class="about__subtitle-wrapper">
-          <p class="about__subtitle title title--h2">Ведущая платформа&nbsp; для торговли&nbsp; цифровыми активами</p>
-        </div>
+        <a href="" class="converter__action converter__action-current">Send</a>
+        <a href="" class="converter__action converter__action-nocurrent">Recieve</a>
 
-        <div class="about__description-wrapper">
-          <p class="about__description">
-            Широкий спектр услуг по торговле и&nbsp; управлению&nbsp; цифровыми активами для&nbsp; удовлетворения&nbsp; разнообразных торговых&nbsp; потребностей. Всесторонняя&nbsp; защита&nbsp; пользовательских активов с нашим&nbsp; автономным&nbsp; хранилищем,&nbsp; многофакторным шифрованием и&nbsp; круглосуточным мониторингом&nbsp; безопасности.
-          </p>
-        </div>
-      </section>
+        <p class="converter__price">$350.00</p>
+        <p class="converter__crypto">0 BTC ≈ $0.00</p>
 
-      <section class="step">
-        <h2 class="step__title visually-hidden">Список шагов для обмена</h2>
+        <button class="converter__conversion">
+          <img src="./img/control/converter-conversion.svg" alt="Переключить список отображения." class="" width="21"
+            height="21">
+        </button>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="converter__form form">
+          <fieldset class="form__section">
 
-        <div class="step__subtitle-wrapper">
-          <h2 class="step__subtitle">Совершите обмен за 3 шага</h2>
-          <a class="step__exchange">Начать обмен</a>
-        </div>
 
-        <ul class="step__list">
-          <li class="step__item">
-            <div class="step__card card">
-              <div class="card__image-wrapper">
-                <a class="card__image-link card__image-add" href="#">
-                  <img
-                    src="#"
-                    alt="Создать сделку."
-                    class="card__add"
-                    width="32"
-                    height="32"
-                  >
-                </a>
-                <a class="card__image-link card__image-search" href="#">
-                  <img
-                    src="#"
-                    alt="Найти сделку."
-                    class="card__search"
-                    width="32"
-                    height="32"
-                  >
-                </a>
-              </div>
+            <div class="form__item">
+              <p class="form__item-title">Pay with</p>
+              <div class="form__item-crypto">
+                <button class="form__item-crypto-navigation" type="button">
+                  <span class="form__item-description">Bitcoin</span>
 
-              <div class="card__content">
-                <div class="card__step-wrapper">
-                  <p class="card__step title title--h4">Шаг 1</p>
-                </div>
+                  <span class="form__item-crypto-focus"></span>
+                </button>
 
-                <div class="card__content-wrapper">
-                  <h3 class="card__title title title--h3">Создай или найди сделку</h3>
-                  <p class="card__text">Широкий спектр услуг по торговле и управлению&nbsp; цифровыми активами для удовлетворения </p>
+                <div class="form__cryptolist-wrapper">
+                  <ul class="form__cryptolist">
+                    <li><a class="form__cryptolist-link form__bitcoin" href="#">Bitcoin</a></li>
+                    <li><a class="form__cryptolist-link form__ethereum" href="#">Ethereum</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </li>
 
-          <li class="step__item">
-            <div class="step__card card">
-              <div class="card__image-wrapper">
-                <a class="card__image-link card__image-security" href="#">
-                  <img
-                    src="#"
-                    alt="Безопасность сделки."
-                    class="card__security"
-                    width="84"
-                    height="96"
-                  >
-                </a>
-              </div>
+          </fieldset>
 
-              <div class="card__content">
-                <div class="card__step-wrapper">
-                  <p class="card__step">Шаг 2</p>
-                </div>
+          <button class="form__button button button--converter">Continue Transfer</button>
+        </form>
+      </article>
 
-                <div class="card__content-wrapper">
-                  <h3 class="card__title">Безопасно переведи средства</h3>
-                  <p class="card__text">Широкий спектр услуг по торговле и управлению&nbsp; цифровыми активами для удовлетворения </p>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="step__item">
-            <div class="step__card card">
-              <div class="card__image-wrapper">
-                <a class="card__image-link card__image-finish" href="#">
-                  <img
-                    src="#"
-                    alt="Заверги обмен."
-                    class="card__finish"
-                    width="88"
-                    height="88"
-                  >
-                </a>
-              </div>
-
-              <div class="card__content">
-                <div class="card__step-wrapper">
-                  <p class="card__step">Шаг 3</p>
-                </div>
-
-                <div class="card__content-wrapper">
-                  <h3 class="card__title">Заверши обмен</h3>
-                  <p class="card__text">Широкий спектр услуг по торговле и управлению&nbsp; цифровыми активами для удовлетворения </p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section class="map">
-        <h2 class="map__title visually-hidden">Карта стран партнёров</h2>
-
-        <div class="map__wrapper">
-          <div class="map__countries-wrapper">
-            <h3 class="map__countries-title visually-hidden">Список стран партнёров</h3>
-
-            <ul class="map__countries">
-              <li class="map__country">
-                <p class="map__country-description">Россия</p>
-              </li>
-              <li class="map__country">
-                <p class="map__country-description">Украина</p>
-              </li>
-              <li class="map__country">
-                <p class="map__country-description">Турция</p>
-              </li>
-              <li class="map__country">
-                <p class="map__country-description">Казахстан</p>
-              </li>
-              <li class="map__country">
-                <p class="map__country-description">Беларусь</p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="map__subtitle-wrapper">
-            <h3 class="map__subtitle visually-hidden">Подключить страну к партнёрству</h3>
-
-            <p class="map__subtitle-description">Страны, с которыми уже работает сервис</p>
-
-            <button class="map__subtitle button button--launch">
-              <span class="button__text button__text--launch">Launch app</span>
-            </button>
-          </div>
-
-          <div class="map__image-wrapper">
-            <h3 class="map__image-title visually-hidden">Карта стран</h3>
-            <img
-              src="#"
-              alt="Карта стран."
-              class="map__image"
-              width="1008"
-              height="568"
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="faq">
-        <h2 class="faq__title visually-hidden">Ответы на вопросы</h2>
-
-        <div class="faq__subtitle-wrapper">
-          <h3 class="faq__subtitle">FAQ</h3>
-
-          <p class="faq__subtitle-description">Найдите ответы, на интересующие вопросы</p>
+      <div class="welcome__social">
+        <div class="welcome__scroll-down">
+          <span class="welcome__scroll-text">Листайте вниз</span>
         </div>
 
-        <div class="faq__description-wrapper">
-          <h3 class="faq__description-title">How does staking work?</h3>
+        <div class="welcome__social-wrapper social">
+          <span class="social__description">Наши социальные сети</span>
 
-          <p class="faq__description-text">
-            Staking is a method of verifying and securing transactions on proof of stake blockchains. It’s faster and more energy efficient than other methods such as proof of work. Plus, participants get rewarded for helping in the process. In exchange for delegating  your crypto, you get rewarded with more assets from the network. To generate staking rewards on a Proof of Stake blockchain, a node has to designate a certain amount of tokens on the network as a stake (similar to a security deposit). The chance of that node being chosen to validate the next block is typically proportional to the number of tokens being staked. If the node successfully validates a block, it is awarded the staking reward, similar to a miner being rewarded in Proof of Work chains. Validators lose part of their stake if they approve a fraudulent transaction — this incentivizes them to only approve valid transactions.
-          </p>
-
-          <ul class="faq__descriptions-list">
-            <li class="faq__description-item">
-              <p class="faq__description-title">Which Proof of Stake asset(s) earn staking rewards?</p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Facebook">
+                  <use href="#"></use>
+                </svg>
+                <span class="visually-hidden">Facebook.</span>
+              </a>
             </li>
-            <li class="faq__description-item">
-              <p class="faq__description-title">Who is eligible to stake on DEPO?</p>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Twitter">
+                  <use href="#"></use>
+                </svg>
+                <span class="visually-hidden">Twitter.</span>
+              </a>
             </li>
-            <li class="faq__description-item">
-              <p class="faq__description-title">How does ETH staking work?</p>
-            </li>
-            <li class="faq__description-item">
-              <p class="faq__description-title">What are the risks associated with staking?</p>
-            </li>
-            <li class="faq__description-item">
-              <p class="faq__description-title">How do I earn DeFi yield on DEPO?</p>
-            </li>
-            <li class="faq__description-item">
-              <p class="faq__description-title">What’s the difference between staking and DeFi yield?</p>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instagram">
+                  <use href="#"></use>
+                </svg>
+                <span class="visually-hidden">Instagram.</span>
+              </a>
             </li>
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="services">
-        <h2 class="services__title visually-hidden">Наши услуги</h2>
+    <section class="about">
+      <h2 class="about__title visually-hidden">О платформе</h2>
 
-        <div class="services__subtitle-wrapper">
-          <p class="services__subtitle">Обменяйте средства за считанные минуты</p>
+      <div class="about__subtitle-wrapper">
+        <p class="about__subtitle title title--h2">Ведущая платформа&nbsp; для торговли&nbsp; цифровыми активами</p>
+      </div>
 
-          <p class="services__description">
-            Широкий спектр услуг по торговле и управлению цифровыми активами для удовлетворения разнообразных торговых потребностей
-          </p>
+      <div class="about__description-wrapper">
+        <p class="about__description">
+          Широкий спектр услуг по торговле и&nbsp; управлению&nbsp; цифровыми активами для&nbsp; удовлетворения&nbsp;
+          разнообразных торговых&nbsp; потребностей. Всесторонняя&nbsp; защита&nbsp; пользовательских активов с
+          нашим&nbsp; автономным&nbsp; хранилищем,&nbsp; многофакторным шифрованием и&nbsp; круглосуточным
+          мониторингом&nbsp; безопасности.
+        </p>
+      </div>
+    </section>
 
-          <button class="services__launch button button--launch">
+    <section class="step">
+      <h2 class="step__title visually-hidden">Список шагов для обмена</h2>
+
+      <div class="step__subtitle-wrapper">
+        <h2 class="step__subtitle">Совершите обмен за 3 шага</h2>
+        <a class="step__exchange">Начать обмен</a>
+      </div>
+
+      <ul class="step__list">
+        <li class="step__item">
+          <div class="step__card card">
+            <div class="card__image-wrapper">
+              <a class="card__image-link card__image-add" href="#">
+                <img src="#" alt="Создать сделку." class="card__add" width="32" height="32">
+              </a>
+              <a class="card__image-link card__image-search" href="#">
+                <img src="#" alt="Найти сделку." class="card__search" width="32" height="32">
+              </a>
+            </div>
+
+            <div class="card__content">
+              <div class="card__step-wrapper">
+                <p class="card__step title title--h4">Шаг 1</p>
+              </div>
+
+              <div class="card__content-wrapper">
+                <h3 class="card__title title title--h3">Создай или найди сделку</h3>
+                <p class="card__text">Широкий спектр услуг по торговле и управлению&nbsp; цифровыми активами для
+                  удовлетворения </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step__item">
+          <div class="step__card card">
+            <div class="card__image-wrapper">
+              <a class="card__image-link card__image-security" href="#">
+                <img src="#" alt="Безопасность сделки." class="card__security" width="84" height="96">
+              </a>
+            </div>
+
+            <div class="card__content">
+              <div class="card__step-wrapper">
+                <p class="card__step">Шаг 2</p>
+              </div>
+
+              <div class="card__content-wrapper">
+                <h3 class="card__title">Безопасно переведи средства</h3>
+                <p class="card__text">Широкий спектр услуг по торговле и управлению&nbsp; цифровыми активами для
+                  удовлетворения </p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step__item">
+          <div class="step__card card">
+            <div class="card__image-wrapper">
+              <a class="card__image-link card__image-finish" href="#">
+                <img src="#" alt="Заверги обмен." class="card__finish" width="88" height="88">
+              </a>
+            </div>
+
+            <div class="card__content">
+              <div class="card__step-wrapper">
+                <p class="card__step">Шаг 3</p>
+              </div>
+
+              <div class="card__content-wrapper">
+                <h3 class="card__title">Заверши обмен</h3>
+                <p class="card__text">Широкий спектр услуг по торговле и управлению&nbsp; цифровыми активами для
+                  удовлетворения </p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="map">
+      <h2 class="map__title visually-hidden">Карта стран партнёров</h2>
+
+      <div class="map__wrapper">
+        <div class="map__countries-wrapper">
+          <h3 class="map__countries-title visually-hidden">Список стран партнёров</h3>
+
+          <ul class="map__countries">
+            <li class="map__country">
+              <p class="map__country-description">Россия</p>
+            </li>
+            <li class="map__country">
+              <p class="map__country-description">Украина</p>
+            </li>
+            <li class="map__country">
+              <p class="map__country-description">Турция</p>
+            </li>
+            <li class="map__country">
+              <p class="map__country-description">Казахстан</p>
+            </li>
+            <li class="map__country">
+              <p class="map__country-description">Беларусь</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="map__subtitle-wrapper">
+          <h3 class="map__subtitle visually-hidden">Подключить страну к партнёрству</h3>
+
+          <p class="map__subtitle-description">Страны, с которыми уже работает сервис</p>
+
+          <button class="map__subtitle button button--launch">
             <span class="button__text button__text--launch">Launch app</span>
           </button>
         </div>
 
-        <div class="services__image-wrapper">
-          <img src="#" alt="" class="services__image">
+        <div class="map__image-wrapper">
+          <h3 class="map__image-title visually-hidden">Карта стран</h3>
+          <img src="#" alt="Карта стран." class="map__image" width="1008" height="568">
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer class="footer">
-      <div class="footer__copyright">
-        <p class="footer__copyright-text">© DEPO 2022</p>
+    <section class="faq">
+      <h2 class="faq__title visually-hidden">Ответы на вопросы</h2>
+
+      <div class="faq__subtitle-wrapper">
+        <h3 class="faq__subtitle">FAQ</h3>
+
+        <p class="faq__subtitle-description">Найдите ответы, на интересующие вопросы</p>
       </div>
 
-      <div class="footer__privacy">
-        <p class="footer__terms-text">Terms of Use</p>
-        <p class="footer__privacy-text">Privacy policy</p>
-      </div>
+      <div class="faq__description-wrapper">
+        <h3 class="faq__description-title">How does staking work?</h3>
 
-      <div class="footer__social-wrapper social">
-        <span class="social__description">Наши социальные сети</span>
+        <p class="faq__description-text">
+          Staking is a method of verifying and securing transactions on proof of stake blockchains. It’s faster and more
+          energy efficient than other methods such as proof of work. Plus, participants get rewarded for helping in the
+          process. In exchange for delegating your crypto, you get rewarded with more assets from the network. To
+          generate staking rewards on a Proof of Stake blockchain, a node has to designate a certain amount of tokens on
+          the network as a stake (similar to a security deposit). The chance of that node being chosen to validate the
+          next block is typically proportional to the number of tokens being staked. If the node successfully validates
+          a block, it is awarded the staking reward, similar to a miner being rewarded in Proof of Work chains.
+          Validators lose part of their stake if they approve a fraudulent transaction — this incentivizes them to only
+          approve valid transactions.
+        </p>
 
-        <ul class="social__list">
-          <li class="social__item">
-            <a
-              class="social__link social__link--facebook"
-              href="https://www.facebook.com"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Facebook"
-              >
-                <use href="#"></use>
-              </svg>
-              <span class="visually-hidden">Facebook.</span>
-            </a>
+        <ul class="faq__descriptions-list">
+          <li class="faq__description-item">
+            <p class="faq__description-title">Which Proof of Stake asset(s) earn staking rewards?</p>
           </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--twitter"
-              href="https://twitter.com"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Twitter"
-              >
-                <use href="#"></use>
-              </svg>
-              <span class="visually-hidden">Twitter.</span>
-            </a>
+          <li class="faq__description-item">
+            <p class="faq__description-title">Who is eligible to stake on DEPO?</p>
           </li>
-          <li class="social__item">
-            <a
-              class="social__link social__link--instagram"
-              href="https://www.instagram.com"
-            >
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Instagram"
-              >
-                <use href="#"></use>
-              </svg>
-              <span class="visually-hidden">Instagram.</span>
-            </a>
+          <li class="faq__description-item">
+            <p class="faq__description-title">How does ETH staking work?</p>
+          </li>
+          <li class="faq__description-item">
+            <p class="faq__description-title">What are the risks associated with staking?</p>
+          </li>
+          <li class="faq__description-item">
+            <p class="faq__description-title">How do I earn DeFi yield on DEPO?</p>
+          </li>
+          <li class="faq__description-item">
+            <p class="faq__description-title">What’s the difference between staking and DeFi yield?</p>
           </li>
         </ul>
       </div>
-    </footer>
+    </section>
 
-    <script src="./js/script.js"></script>
-  </body>
+    <section class="services">
+      <h2 class="services__title visually-hidden">Наши услуги</h2>
+
+      <div class="services__subtitle-wrapper">
+        <p class="services__subtitle">Обменяйте средства за считанные минуты</p>
+
+        <p class="services__description">
+          Широкий спектр услуг по торговле и управлению цифровыми активами для удовлетворения разнообразных торговых
+          потребностей
+        </p>
+
+        <button class="services__launch button button--launch">
+          <span class="button__text button__text--launch">Launch app</span>
+        </button>
+      </div>
+
+      <div class="services__image-wrapper">
+        <img src="#" alt="" class="services__image">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__copyright">
+      <p class="footer__copyright-text">© DEPO 2022</p>
+    </div>
+
+    <div class="footer__privacy">
+      <p class="footer__terms-text">Terms of Use</p>
+      <p class="footer__privacy-text">Privacy policy</p>
+    </div>
+
+    <div class="footer__social-wrapper social">
+      <span class="social__description">Наши социальные сети</span>
+
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Facebook">
+              <use href="#"></use>
+            </svg>
+            <span class="visually-hidden">Facebook.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Twitter">
+              <use href="#"></use>
+            </svg>
+            <span class="visually-hidden">Twitter.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instagram">
+              <use href="#"></use>
+            </svg>
+            <span class="visually-hidden">Instagram.</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

@@ -1,8 +1,8 @@
 @use "../global/bootstrap.scss";
 
-.welcome {
-  background-color: bootstrap.$color-blue-disabled;
-}
+// .welcome {
+//   background-color: bootstrap.$color-blue-disabled;
+// }
 
 .welcome__description {
   margin: 0;
@@ -85,3 +85,21 @@
   background-image: url("../../img/background/arrow-green.svg");
   background-repeat: no-repeat;
 }
+
+.welcome__scroll-text {
+  position: relative;
+}
+
+
+.welcome__scroll-text::after {
+  width: 24px;
+  height: 24px;
+  border-radius: 9px;
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 10px;
+  background-image: url("../../img/control/arrow-down.svg");
+  background-repeat: no-repeat;
+}
+
