@@ -1,0 +1,238 @@
+@use "../global/bootstrap.scss";
+
+.converter {
+  font-family: bootstrap.$ff-inter;
+}
+
+.converter__title {
+  @include bootstrap.visually-hidden;
+}
+
+.converter__action {
+  padding: 0;
+  width: 65px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: bootstrap.$ff-inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 14px;
+  // убрать подчеркивание у ссылки
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.converter__action-current {
+  background-color: bootstrap.$color-default-black;
+  color: bootstrap.$color-default-white;
+}
+
+.converter__action-nocurrent {
+  color: bootstrap.$color-default-black;
+}
+
+.converter__price {
+  margin: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 53px;
+  color: bootstrap.$color-default-black;
+}
+
+.converter__crypto {
+  margin: 0;
+  font-family: bootstrap.$ff-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: bootstrap.$color-default-gray-light01;
+}
+
+.converter__conversion {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid bootstrap.$color-default-gray-light02;
+}
+
+.form__section {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+
+// стилизация списка крипты
+.form__item-title {
+  margin: 0;
+  font-family: bootstrap.$ff-inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: bootstrap.$color-default-gray-light01;
+}
+
+.form__item-crypto {
+  width: 284px;
+  height: 40px;
+  // display: block;
+  font-family: bootstrap.$ff-inter;
+}
+
+.form__item-crypto-navigation {
+  margin: 0;
+  padding: 0;
+  width: 284px;
+  height: 40px;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  border: none;
+}
+
+.form__item-description {
+  margin: 0;
+  padding-left: 28px;
+  width: 284px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  font-family: bootstrap.$ff-inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 16px;
+  color: bootstrap.$color-default-black;
+  background-color: bootstrap.$color-blue-disabled;
+  border: none;
+  text-decoration: none;
+  position: relative;
+}
+
+// реализация стрелки
+.form__item-description::after {
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 10px;
+  background-image: url("../../img/control/arrow-down.svg");
+  background-repeat: no-repeat;
+}
+
+/* подменю каталога */
+.form__cryptolist-wrapper {
+  display: none;
+  flex-direction: row;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.form__cryptolist {
+  color: bootstrap.$color-default-black;
+
+  @include bootstrap.list-reset;
+}
+
+
+.form__cryptolist-link {
+  margin: 0;
+  padding-left: 28px;
+  width: 284px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  font-family: bootstrap.$ff-inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 16px;
+  color: bootstrap.$color-default-black;
+  background-color: bootstrap.$color-blue-disabled;
+  border: none;
+  text-decoration: none;
+  position: relative;
+}
+
+
+/* фокус на весь form__item-crypto-navigation */
+.form__item-crypto-navigation:focus {
+  outline: none;
+}
+
+.form__item-crypto-navigation:focus .form__item-crypto-focus::before {
+  width: 284px;
+  height: 40px;
+  position: absolute;
+  content: "";
+  left: 0;
+  outline: 2px solid bootstrap.$color-blue;
+  outline-offset: -2px;
+}
+
+// фокус на элементы списка
+.form__cryptolist-link:hover {
+  opacity: 0.6;
+}
+
+.form__cryptolist-link:active {
+  opacity: 0.3;
+}
+
+.form__cryptolist-link:focus-within {
+  outline: 2px solid bootstrap.$color-blue;
+  outline-offset: -2px;
+  z-index: 2;
+}
+
+
+/* активируем подменю */
+.form__item-crypto:hover .form__cryptolist-wrapper {
+  display: flex;
+}
+
+.form__item-crypto:focus-within .form__cryptolist-wrapper {
+  display: flex;
+}
+
+
+// реализация отображения крипты
+.form__item-description::before,
+.form__cryptolist-link::before {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  content: "";
+  left: 2px;
+}
+
+.form__item-description::before {
+  background-image: url("../../img/icon-crypto/btc.svg");
+  background-repeat: no-repeat;
+}
+
+.form__bitcoin::before {
+  background-image: url("../../img/icon-crypto/btc.svg");
+  background-repeat: no-repeat;
+}
+
+.form__ethereum::before {
+  background-image: url("../../img/icon-crypto/eth.svg");
+  background-repeat: no-repeat;
+}
+
